@@ -6,8 +6,8 @@ const hello = 'Hello, ';
 const explanationEven = 'Answer "yes" if the number is even, otherwise answer "no".';
 const questionEven = 'Question: ';
 const answerEven = 'Your answer: ';
-const endOfGame = 'Congratulations, ';
 const yourAnswerCorrect = 'Correct!';
+const endOfGame = 'Congratulations, ';
 
 const getRandomInt = (max) => Math.floor(Math.random() * max);
 
@@ -20,7 +20,7 @@ export default () => {
 
   console.log(explanationEven);
 
-  for (let i = 1; i < 4; i += 1) {
+  for (let i = 0; i < 3; i += 1) {
     const randomInt = getRandomInt(100);
     const correctAnswer = (isEven(randomInt)) ? 'yes' : 'no';
     console.log(`${questionEven}${randomInt}`);
@@ -29,11 +29,10 @@ export default () => {
     if (answer === correctAnswer) {
       console.log(yourAnswerCorrect);
     } else {
-      i = 0;
-      const yourAnswerIncorrect = `'${answer}' is wrong answer ;(. 'Correct answer was '${correctAnswer}'.\nLet's try again, Bill!`;
-      console.log(yourAnswerIncorrect);
+      const yourAnswerIncorrect = `'${answer}' is wrong answer ;(. 'Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`;
+      return console.log(yourAnswerIncorrect);
     }
   }
 
-  console.log(`${endOfGame}${name}`);
+  return console.log(`${endOfGame}${name}`);
 };
