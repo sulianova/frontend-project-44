@@ -1,7 +1,3 @@
-export const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max);
-};
+export const getRandomInt = (max) => Math.floor(Math.random() * max);
 
-export const isEven = (number) => {
-    return (number % 2) === 0;
-};
+export const isEven = (number) => (number % 2) === 0;
