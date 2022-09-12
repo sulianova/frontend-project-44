@@ -7,3 +7,8 @@ export const getGCD = (a, b) => {
   if (a < b) return getGCD(b, a);
   return getGCD(b, a % b);
 };
+
+export const getProgression = (fn, start, length) => {
+  const arrayForProgression = new Array(length).fill(0);
+  return arrayForProgression.map((element, index) => fn(start + index));
+};
