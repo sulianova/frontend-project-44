@@ -33,4 +33,3 @@ npm link
 
 ### brain-prime
 Простое число. Суть игры: пользователю показывается случайное число. И ему нужно ответить yes, если число простое, или no — если не простое.
-<a href="https://asciinema.org/a/opT2BapAyRQE7Zoga9R60t06R" target="_blank"><img src="https://asciinema.org/a/opT2BapAyRQE7Zoga9R60t06R.svg" /></a>
